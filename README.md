@@ -46,7 +46,8 @@ IPINFO_TOKEN = "xxx"
 
 SHODAN_API_KEY = "xxx"
 
-sudo ./threat_blocker.py <IP>
+## Usage
+sudo ./threat_blocker.py 8.8.8.8
 
 ## License
 MIT – see LICENSE
