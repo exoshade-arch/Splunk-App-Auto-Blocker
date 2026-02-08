@@ -2,7 +2,7 @@
 
 Python tool + custom Splunk app for automatic IP blocking based on brute-force detection.
 
-## What we built
+## What i built
 - Custom Splunk app: threat_blocker
 - Custom alert action: Threat Blocker
   - alert_actions.conf: is_custom = true, fields = src_ip
@@ -16,7 +16,7 @@ Python tool + custom Splunk app for automatic IP blocking based on brute-force d
 - Forwarder monitors /var/log/auth.log → index=linux_security (inputs.conf)
 - Python script threat_blocker.py enriches IP (AbuseIPDB, IPinfo, Shodan) and blocks via iptables if score ≥80
 
-## Process we did
+## Process i did
 1. Created app in Splunk → threat_blocker
 2. sudo mkdir -p /opt/splunk/etc/apps/threat_blocker/{bin,local}
 3. sudo cp threat_blocker.py config.py /opt/splunk/etc/apps/threat_blocker/bin/
