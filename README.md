@@ -28,15 +28,22 @@ Python tool + custom Splunk app for automatic IP blocking based on brute-force d
 
 ## Install & Run
 git clone https://github.com/exoshade-arch/Splunk-App-Auto-Blocker.git
+
 cd Splunk-App-Auto-Blocker
+
 python3 -m venv venv && source venv/bin/activate
+
 pip install requests
+
 chmod +x threat_blocker.py
 
 ## Create 
 (config.py with API keys – never commit)
+
 ABUSEIPDB_API_KEY = "xxx"
+
 IPINFO_TOKEN = "xxx"
+
 SHODAN_API_KEY = "xxx"
 
 sudo ./threat_blocker.py <IP>
